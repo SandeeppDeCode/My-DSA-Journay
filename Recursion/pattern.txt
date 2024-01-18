@@ -1,0 +1,39 @@
+Difference between subarray and subsequences and subset 
+https://www.scaler.com/topics/difference-between-subarray-subset-and-subsequence/
+
+
+In mathematics, combination and permutation are two different ways of grouping elements of a set into subsets. 
+In a combination, the elements of the subset can be listed in any order. 
+In a permutation, the elements of the subset are listed in a specific order.
+
+
+Subarray - is any contingous part of a given array;
+Eg = [1,2,3]
+all Subarray are
+1. [1]
+2. [2]
+3. [3]
+4. [1,2]
+5. [2,3]
+6. [1,2,3]
+No. of subarray = n * (n+1)/2
+
+Subet - > any possible combination of given original array or set. Its like powerset of a set.
+no. of subset = 2^n
+
+subsequence -> is a sequence of the elements of the array obtained by deleting some elements of the array.
+no. of subsequence = 2^n
+
+Pattern - 1;
+using the concept of take and not take 
+1. Generating subsequences and subset 
+
+function()
+{
+    arr.push(nums[index])
+    function(index+1,arr)
+    arr.pop(nums[index])
+    function(index+1,arr)
+}
+
+to print the dloo
