@@ -1,0 +1,2 @@
+Binary search Real Life example -  Dictionary - slipt and remove decrese your search space
+As long as the given item are in sorted we can do binary search.
