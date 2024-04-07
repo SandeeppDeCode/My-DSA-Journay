@@ -1,0 +1,45 @@
+object.entries
+object.keys
+object.values
+
+The time complexity to traverse through a frequency hash map in JavaScript depends on the number of key-value pairs in the map. Let's denote the number of key-value pairs as 
+�
+N.
+
+For a JavaScript Map or plain object used as a frequency hash map:
+
+for...of Loop with Map.entries() or Object.entries():
+
+Time Complexity: O(N)
+This loop allows you to iterate over the key-value pairs of the map.
+javascript
+Copy code
+const frequencyMap = new Map();
+// Assume the map is populated
+for (const [key, value] of frequencyMap.entries()) {
+    // Code to process key and value
+}
+Map.forEach() Method:
+
+Time Complexity: O(N)
+This method allows you to iterate over the key-value pairs with a callback function.
+javascript
+Copy code
+const frequencyMap = new Map();
+// Assume the map is populated
+frequencyMap.forEach((value, key) => {
+    // Code to process key and value
+});
+for...in Loop for Plain Objects:
+
+Time Complexity: O(N) for modern engines (V8, SpiderMonkey), but it can be higher for older engines.
+This loop iterates over enumerable properties, and in the case of a frequency map, it would iterate over keys.
+javascript
+Copy code
+const frequencyMap = { key1: value1, key2: value2, /* ... */ };
+// Assume the map is populated
+for (const key in frequencyMap) {
+    const value = frequencyMap[key];
+    // Code to process key and value
+}
+Keep in mind that the constant factors might differ between these methods, and the specific use case could influence the choice of method. Generally, for iterating over key-value pairs, using for...of with Map.entries() is a common and concise choice.
