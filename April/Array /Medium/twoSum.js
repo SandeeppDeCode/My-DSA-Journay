@@ -64,7 +64,7 @@ function twoSumExits(arr,target){
         if(sum === target){
             return 'Yes'
         }
-        if(target < sum){
+        if(target > sum){
             left++;
         }else{
             right--;
