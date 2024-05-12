@@ -1,5 +1,5 @@
 
-const nums = [1, 0,2,1,0,0,1,1,0]
+const nums = [0,1,0,3,12,0,1,0]
 var moveZeroesAtEnd = function(nums) {
     let zeroIndex = 0;
     for(let i = 0; i < nums.length; i++){
