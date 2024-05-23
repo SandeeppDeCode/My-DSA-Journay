@@ -1,0 +1,83 @@
+// for doubly linked list
+
+Summary of Changes
+==================
+
+### Prepend
+- Handled the edge case where the list is empty.
+
+### Append
+- Handled the edge case where the list is empty.
+
+### insertAfter
+- Checked for out-of-bounds index and updated the tail if the new node is inserted at the end.
+
+### insertBefore
+- Checked for out-of-bounds index and updated the head if the new node is inserted at the beginning.
+
+### deleteFirstNode
+- Handled the edge case where the list is empty and where there is only one node.
+
+### deleteFromEnd
+- Handled the edge case where the list is empty and where there is only one node.
+
+### delete
+- Checked for out-of-bounds index and handled deletions at the beginning and end properly.
+
+### traverse
+- Checked for out-of-bounds index.
+
+
+Singly Linked Lists (SLL)
+=========================
+
+**Empty List**:
+- Attempting to delete or access an element when the list is empty.
+- Inserting elements into an empty list.
+
+**Single Element List**:
+- Deleting the only element in the list.
+- Inserting before or after the only element.
+
+**Index Out of Bounds**:
+- Accessing, inserting, or deleting at an index that is negative or greater than the length of the list.
+
+**Head and Tail Operations**:
+- Ensuring correct handling when the head or tail of the list is involved, especially during insertion and deletion.
+
+
+Doubly Linked Lists (DLL)
+=========================
+
+**Empty List**:
+- Similar to SLL, handling deletions and accesses when the list is empty.
+
+**Single Element List**:
+- Deleting the only element should correctly update both head and tail pointers.
+- Inserting before or after should correctly update both head and tail pointers.
+
+**Index Out of Bounds**:
+- Similar to SLL, ensuring indices are within valid ranges for operations.
+
+**Head and Tail Operations**:
+- Correctly updating the `prev` and `next` pointers of nodes during insertions and deletions involving the head or tail.
+
+**Middle Operations**:
+- Correctly linking the `prev` and `next` pointers of neighboring nodes during insertions and deletions.
+
+
+Circular Linked Lists (CLL)
+===========================
+
+**Empty List**:
+- Handling operations when the list is empty.
+
+**Single Element List**:
+- Ensuring that the single element points to itself (both `next` and `prev` if doubly circular).
+
+**Index Out of Bounds**:
+- Similar to SLL and DLL, checking for valid indices.
+
+**Circular Nature**:
+- Ensuring that the `next` of the last node points to the head and the `prev` of the head points to the tail (for doubly circular).
+- Handling the wrap-around behavior during traversals, insertions, and deletions.

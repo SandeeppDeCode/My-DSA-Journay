@@ -67,6 +67,8 @@ class LinkedList{
 
 
 
+
+
 }
 
 const ls = new LinkedList(10);
