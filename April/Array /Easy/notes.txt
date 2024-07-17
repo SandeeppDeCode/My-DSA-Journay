@@ -1,2 +1,4 @@
 Spread Operator 
 2 pointer method
+Duplicate - Usee Set First intution 
+

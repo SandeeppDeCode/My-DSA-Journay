@@ -1,4 +1,4 @@
-for(let i = 0; i < arr.length; i++){
+// for(let i = 0; i < arr.length; i++){
 //     for(let j = i; j < arr.length;j++){
 //         let subArr = arr.slice(i,j+1)
 //         console.log(subArr);

@@ -59,3 +59,22 @@ I hope this clears up the confusion. If you have any more questions, feel free t
 */
 
 
+function check(str){
+    let words = [];
+    let word = '';
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] !== ' ') {
+            word += str[i];
+        } else if (word !== '') {
+            words.push(word);
+            word = '';
+        }
+    }
+// Add the last word if it's not empty
+    if (word !== '') {
+        words.push(word);
+    }
+    return words;
+}
+console.log(check("a good   example"));

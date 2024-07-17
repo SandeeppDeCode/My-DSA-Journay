@@ -1,6 +1,6 @@
 
 
-
+//hahing methods works if the array has positveNegaitve and zero;
 function getLongestSubarray(a, k) {
     let n = a.length; // size of the array
 
@@ -34,7 +34,7 @@ function getLongestSubarray(a, k) {
     return maxLen;
 }
 
-let a = [-1, 1, 1];
+let a = [-1, 1, 0];
 let k = 1;
 let len = getLongestSubarray(a, k);
 console.log("The length of the longest subarray is:", len);

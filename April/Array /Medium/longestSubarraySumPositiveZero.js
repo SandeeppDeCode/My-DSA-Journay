@@ -1,5 +1,5 @@
-
-
+// Two Pointer approach 
+// This works if the array contain only positive and zero
 
 function getLongestSubarray(a, k) {
     let n = a.length; // size of the array
