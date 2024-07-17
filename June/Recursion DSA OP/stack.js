@@ -1,0 +1,5 @@
+Class Node{
+    constructor(data) {
+        
+    }
+}
