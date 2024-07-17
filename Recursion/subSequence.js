@@ -1,7 +1,8 @@
+const ans =[];
 function printSubSequences(index,list,arr,n)
 {
     if(index >= n){
-        console.log(list);
+       ans.push(list.slice())
         return ;
     }
     //code to take it;
@@ -11,5 +12,8 @@ function printSubSequences(index,list,arr,n)
     list.pop(arr[index]);
     printSubSequences(index+1,list,arr,n)
 }
-const arr = [3,1,2]
+const arr = [1,2,3]
 printSubSequences(0,[],arr,arr.length)
+
+console.log(ans)
+
