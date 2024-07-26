@@ -1,0 +1,1 @@
+          // [arr[index],arr[i]]=[arr[i],arr[index]];
